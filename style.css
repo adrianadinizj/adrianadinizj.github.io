@@ -1,3 +1,8 @@
+@media  (max-width: 1200px){
+
+}
+    
+
 body {
     color: white;
     background-color:steelblue;
@@ -18,7 +23,7 @@ header img {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 5px solid rgb(63, 30, 153);
+    border: 5px solid #1c70d3;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 
@@ -75,35 +80,86 @@ nav a:hover {
         clear: both;
         text-align: center;
     }
-        .container {
-            text-align: center;
-            
-        }
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        form {
-            text-align: left;
-            display: inline-block;
-            
-            
-        }
-
-        label {
-            display: inline-block;
-            width: 120px; 
-            text-align: right;
-            margin-right: 10px;
-        }
-
-        input, textarea {
-            display: inline-block;
-            width: 200px; 
-        }
-
-        input[type="submit"] {
-            width: auto; 
-        }
+section {
     
-        .git {
-            width: 30px;
-            height: 30px;
-        }
+    min-width: 100vh;
+    display: grid;
+    place-items:center;
+    padding: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+form {
+    width: 100%;
+    max-width: 20rem;
+    }
+
+label,
+input,
+textarea,
+button {
+    display: block;
+}
+
+input,
+textarea,
+button {
+    width: 100%;
+    font: inherit;
+    padding: 1.25rem;
+    font-weight: 700;
+}
+input,
+textarea {
+    margin-bottom: 1rem;
+    color: white;
+    background: #1d90f5;
+    border: 0.125rem;
+    transition: border-color 0.3s;
+    box-shadow: 0.3s;
+
+}
+
+input :hover,
+input :focus
+textarea :hover,
+textarea :focus {
+    outline: none;
+    border-color: #1d90f5;
+    box-shadow: 0 0 0 0.325rem #26344a;
+}
+label {
+    margin-bottom: 0.5rem;
+    color: aliceblue;
+}
+
+textarea {
+    min-height: 12.5rem;
+    resize: vertical;
+}
+button {
+    border: none;
+    border-radius: 99px;
+    color: white;
+    background: #1d90f5;
+    cursor: pointer;
+    transition: 0.3s;
+}
+button :hover,
+button :focus {
+    outline: none;
+    background: #1c70d3;
+    
+}
+
+.git {
+    width: 30px;
+    height: 30px;
+}
+
